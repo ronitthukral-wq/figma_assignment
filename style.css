@@ -1,0 +1,162 @@
+    html,
+    body {
+      font-family: "inter", sans-serif;
+      padding: 0;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    .reveal {
+      visibility: hidden;
+    }
+
+    .hero-section {
+      min-height: auto;
+      width: 100% !important;
+      margin-bottom: 70px;
+      overflow: hidden;
+      padding: 0%;
+    }
+
+    .hero-div {
+      font-size: 450px;
+      color: #EAEAEA;
+      letter-spacing: -5%;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero-text {
+      font-size: 70px;
+      text-align: center;
+    }
+
+    @media(max-width: 768px) {
+
+      .hero-section{
+        height: auto;
+        
+      }
+
+      .hero-div {
+        font-size: 12rem !important;
+      }
+      .hero-text {
+        font-size: 2.5rem;
+      }
+      .donut-watermark {
+        font-size: 3rem;
+      }
+    }
+
+    @media(max-width: 576px) {
+      .hero-div {
+        font-size: 6rem;
+      }
+      .hero-text {
+        font-size: 1.8rem;
+      }
+    }
+
+    .donut-watermark {
+      position: absolute;
+      font-size: 110px;
+      color: #F0F0F0;
+      font-weight: 900;
+      letter-spacing: 5px;
+      pointer-events: none;
+      opacity: 0.8;
+    }
+
+    .nav-item {
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .nav-item::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #D6451E;
+      transition: width 0.3s ease;
+    }
+
+    .nav-link-wrapper:hover .nav-item {
+      color: #D6451E !important;
+    }
+
+    .nav-link-wrapper:hover .nav-item::after {
+      width: 100%;
+    }
+
+    .btn-explore {
+      transition: all 0.3s ease;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .btn-explore:hover {
+      background-color: #000 !important;
+      color: #fff !important;
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .btn-explore span:last-child {
+      transition: transform 0.3s ease;
+    }
+
+    .btn-explore:hover span:last-child {
+      transform: translateX(5px);
+    }
+
+    .btn-orange {
+      background-color: #D6451E;
+      border: none;
+      border-radius: 0 4px 4px 0 !important;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn-orange:hover {
+      background-color: #b33918;
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .custom-subscribe .form-control {
+      border-radius: 4px 0 0 4px !important;
+      border: 1px solid #ddd;
+      font-size: 0.9rem;
+      padding: 0.75rem 1rem;
+    }
+
+    .border-top {
+      border-top: 1px solid #eee !important;
+    }
+    
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    }
+
+    .navbar-brand {
+      transition: transform 0.3s ease;
+    }
+    .navbar-brand:hover {
+      transform: scale(1.05);
+    }
+
+    .nav-icon {
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    .nav-icon:hover {
+      transform: scale(1.2);
+      filter: brightness(0.8);
+    }
+  
