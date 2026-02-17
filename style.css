@@ -33,17 +33,19 @@
 
     @media(max-width: 768px) {
 
-      .hero-section{
+      .hero-section {
         height: auto;
-        
+
       }
 
       .hero-div {
         font-size: 12rem !important;
       }
+
       .hero-text {
         font-size: 2.5rem;
       }
+
       .donut-watermark {
         font-size: 3rem;
       }
@@ -53,6 +55,7 @@
       .hero-div {
         font-size: 6rem;
       }
+
       .hero-text {
         font-size: 1.8rem;
       }
@@ -102,7 +105,7 @@
       background-color: #000 !important;
       color: #fff !important;
       transform: scale(1.05);
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
 
     .btn-explore span:last-child {
@@ -136,18 +139,20 @@
     .border-top {
       border-top: 1px solid #eee !important;
     }
-    
+
     .card {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
     .card:hover {
       transform: translateY(-10px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
     }
 
     .navbar-brand {
       transition: transform 0.3s ease;
     }
+
     .navbar-brand:hover {
       transform: scale(1.05);
     }
@@ -155,8 +160,22 @@
     .nav-icon {
       transition: transform 0.3s ease, filter 0.3s ease;
     }
+
     .nav-icon:hover {
       transform: scale(1.2);
       filter: brightness(0.8);
     }
-  
+
+
+    .eclipse-shadow {
+      width: 30%;   
+      height: 30px;
+      margin: 10px auto 0;
+
+      background: black;
+      border-radius: 50%;
+
+      transform: scaleX(1.6);
+      filter: blur(15px);
+      opacity: 0.25;
+    }
